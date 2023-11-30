@@ -1,0 +1,6 @@
+include_directories(${CMAKE_SOURCE_DIR}/test/peripheral/include)
+add_executable(clock_test clock_test.cpp)
+target_link_libraries(clock_test PUBLIC gtest_main)
+target_link_libraries(clock_test PUBLIC clock)
+add_test(clock_test_exe clock_test)
+enable_testing()

@@ -1,0 +1,5 @@
+include_directories(${CMAKE_SOURCE_DIR}/debugger/include)
+include_directories(${CMAKE_SOURCE_DIR}/memory/include)
+include_directories(${CMAKE_SOURCE_DIR}/processor/include)
+add_subdirectory(src)
+enable_testing()
